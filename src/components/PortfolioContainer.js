@@ -6,6 +6,18 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Footer from './Footer'
 
+const styles = {
+  background: {
+    
+    paddingBottom: '2.5rem'
+  },
+  main: {
+  position: 'relative',
+  minHeight: '100vh',
+  backgroundColor: "aliceblue",
+  }
+}
+
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
 
@@ -25,9 +37,9 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <main>
+    <main style={styles.main}>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      <section>
+      <section style={styles.background}>
       {renderPage()}
       </section>
       <Footer/>

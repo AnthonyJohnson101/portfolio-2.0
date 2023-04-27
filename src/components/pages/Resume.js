@@ -12,12 +12,15 @@ const styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center"
+  },
+  background: {
+    backgroundColor: "aliceblue"
   }
 };
 
 export default function Resume() {
   return (
-    <div>
+    <div style={styles.background}>
       <h1 style={styles.text}>Resume Page</h1>
       <p></p>
         <Table striped bordered hover>
@@ -30,7 +33,7 @@ export default function Resume() {
         </thead>
         <tbody>
           <tr>
-            <td>HTML5</td>
+            <td>HTML</td>
             <td>jQuery</td>
             <td>Sequelize</td>
           </tr>

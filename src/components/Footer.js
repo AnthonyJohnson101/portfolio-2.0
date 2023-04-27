@@ -8,8 +8,7 @@ const styles = {
     position: "absolute",
     bottom: 0,
     width: "100%",
-    backgroundColor: "grey",
-    
+    backgroundColor: "darkgrey",
     },
     links: {
         display: "flex",
