@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub} from "@fortawesome/free-brands-svg-icons"
+
 const styles = {
   caro: {
     height: "85vh",
@@ -38,7 +39,7 @@ export default function Portfolio() {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h3><a href="">Day2Day</a></h3>
+              <h3><a href="https://anthonyjohnson101.github.io/recent-events-dashboard/">Day2Day</a></h3>
               <p>My first collaberative project. A recent event dashboard that displays front-end and API proficency</p>
               <a href="https://github.com/AnthonyJohnson101/recent-events-dashboard">
                   <FontAwesomeIcon icon={faGithub} size="2x" />
